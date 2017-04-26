@@ -23,16 +23,15 @@ How can you understand the change in temperature cause the change  in humidity o
 1. Arduino coding with DHT22
 2. Receive data from DHT22 using serialport.io & socket.io in node.js.
 3. Store data in Mongo DB and emit data through socket
-4. Make WEB client in node.js
+4. Start WEB server in node.js
+5. Design MEAN WEB client to view streaming data.
+6. Run WEB client to monitor DHT22 data streaming.
 
 ### [3] coding steps
 
 1. Arduino: start DHT22Signal.ino (DHT22 sensor starts to make data)
-
 2. Mongo db: mongod --dbpath D:\mongo\data  ( Mongo DB start )
-
 3. node.js, SB3:   run data_dht22_mongodb.js   (Store data in Mongodb, ^B)
-
 4. node.js: run express_dht.js (express WEB  server with client of Angular.js)
 
             node \path\express_dht.js
@@ -40,12 +39,11 @@ How can you understand the change in temperature cause the change  in humidity o
 5. MEAN WEB client: Connect and monitor signal from DHT22
 
    http://chaos.inje.ac.kr:3030/index_plotly.html
-   
 6. Data mining and visualization
 
-Mining : R (transfer entropy, machine learning)
+### Mining : R (transfer entropy, machine learning)
 
-Visualization: plot.ly , R 
+### Visualization: plot.ly , R 
 
 * Tip: Maintenance
 
