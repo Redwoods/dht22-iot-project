@@ -16,7 +16,7 @@ How can you understand the change in temperature cause the change in humidity or
  - Mongo DB (v3.4.4)
  - Plotly.js
  - Angular.js
- - angular-plotly.js ([A. Horev's github](https://github.com/alonho/angular-plotly){:target="_blank"})
+ - angular-plotly.js (<a href="https://github.com/alonho/angular-plotly", target="_blank">A. Horev's github</a>)
  - Sublime Text 3
  - OS; Windows 10 64bit
 
