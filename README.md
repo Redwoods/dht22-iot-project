@@ -18,6 +18,7 @@ How can you understand the change in temperature cause the change  in humidity o
  - Plotly.js
  - Angular.js
  - Sublime Text 3
+ - OS; Windows 10 64bit
 
 ### [2] Overall design
 
