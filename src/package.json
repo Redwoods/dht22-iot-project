@@ -1,0 +1,24 @@
+{
+  "name": "dht22",
+  "version": "1.0.0",
+  "description": "DHT22 sensor data streaming",
+  "main": "data_dht22_mongodb.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dht22",
+    "temperature",
+    "humidity",
+    "streaming data",
+    "monitoring"
+  ],
+  "author": "Redwoods",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.2",
+    "mongoose": "^4.9.6",
+    "serialport": "^4.0.7",
+    "socket.io": "^1.7.3"
+  }
+}

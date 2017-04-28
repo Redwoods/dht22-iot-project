@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="plotlyTest">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="./js/angular-plotly.js"></script>
+    <script src="./js/app_plotly.js"></script>
+  </head>
+  <body ng-controller="controller">
+    <!-- plotly graph -->
+    <plotly data="data" layout="layout" options="options"></plotly>
+
+    <h4>{{sensors}}</h4>
+    <h4>{{temp}}</h4>
+    <h4>{{humi}}</h4>
+    <h4>{{t}}</h4>
+
+    <button ng-click="">Move Point</button>
+  </body>
+</html>
