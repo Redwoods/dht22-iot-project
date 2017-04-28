@@ -30,7 +30,7 @@ How can you understand the change in temperature cause the change  in humidity o
 
 ### [3] coding steps
 
-1. Arduino: start [DHT22Signal.ino](/src/arduino/DHT22Siganl/DHT22Signal.ino) DHT22 sensor starts to make data
+1. Arduino: start [DHT22Signal.ino](/src/arduino/DHT22Signal.ino) DHT22 sensor starts to make data
 2. Mongo db: mongod --dbpath D:\mongo\data  ( Mongo DB start )
 3. Insatll npm packages using package.json: npm install
 4. node.js, SB3:   run [data_dht22_mongodb.js](/src/data_dht22_mongodb.js)  (Store data in Mongodb, run by ^B)
@@ -47,6 +47,8 @@ How can you understand the change in temperature cause the change  in humidity o
 ### [4] Mining : R (transfer entropy, machine learning)
 
 ### [5] Visualization: plot.ly , R 
+
+D:\Git_repos\dht22-iot-project\src\arduino\DHT22Signal
 
 * Tip: Maintenance
 
