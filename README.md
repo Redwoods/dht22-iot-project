@@ -49,8 +49,6 @@ How can you understand the change in temperature cause the change  in humidity o
 
 ### [5] Visualization: plot.ly , R 
 
-D:\Git_repos\dht22-iot-project\src\arduino\DHT22Signal
-
 * Tip: Maintenance
 
 MongoDB repair
