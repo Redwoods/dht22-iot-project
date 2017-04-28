@@ -30,15 +30,15 @@ How can you understand the change in temperature cause the change  in humidity o
 
 ### [3] coding steps
 
-1. Arduino: start [DHT22Signal.ino](./src/arduino/DHT22Siganl/DHT22Signal.ino) DHT22 sensor starts to make data
+1. Arduino: start [DHT22Signal.ino](/src/arduino/DHT22Siganl/DHT22Signal.ino) DHT22 sensor starts to make data
 2. Mongo db: mongod --dbpath D:\mongo\data  ( Mongo DB start )
 3. Insatll npm packages using package.json: npm install
-4. node.js, SB3:   run [data_dht22_mongodb.js](./src/data_dht22_mongodb.js)  Store data in Mongodb, run by ^B
-5. node.js: run [express_dht.js](./src/express_dht.js) express WEB server with connection to Mongodb
+4. node.js, SB3:   run [data_dht22_mongodb.js](/src/data_dht22_mongodb.js)  (Store data in Mongodb, run by ^B)
+5. node.js: run [express_dht.js](/src/express_dht.js)  (express WEB server with connection to Mongodb)
 
             node \path\express_dht.js
                          
-6. MEAN WEB client: [index_plotly.html](./src/public/index_plotly.html) Connect and monitor signal from DHT22
+6. MEAN WEB client: [index_plotly.html](/src/public/index_plotly.html)  (Connect and monitor signal from DHT22)
 
    http://chaos.inje.ac.kr:3030/index_plotly.html
    
