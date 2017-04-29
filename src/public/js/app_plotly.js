@@ -22,9 +22,9 @@ app.controller('controller', function($scope, $http) {
 
     $scope.temp = temps;  // array
     $scope.humi = humis;  // array
-	  $scope.t = ts;  // aray
-
-	  var temp = {x: ts,
+    $scope.t = ts;  // aray
+    
+    var temp = {x: ts,
                 y: temps,
                 name:"Temp"};
     var humi = {x: ts,
