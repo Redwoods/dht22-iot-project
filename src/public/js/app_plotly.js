@@ -22,9 +22,9 @@ app.controller('controller', function($scope, $http) {
 
     $scope.temp = temps;  // array
     $scope.humi = humis;  // array
-    $scope.t = ts;  // aray
-    
-    var temp = {x: ts,
+	$scope.t = ts;  // aray
+
+	var temp = {x: ts,
                 y: temps,
                 name:"Temp"};
     var humi = {x: ts,
@@ -33,8 +33,18 @@ app.controller('controller', function($scope, $http) {
 
     $scope.data = [temp, humi];
 
-    $scope.layout = {height: 500, width: 1200, title: 'Simple MEAM App: angular plotly graph from DHT22'};
+    $scope.layout = {height: 500, width: 1100, title: 'Simple MEAM App: angular plotly graph from DHT22'};
     $scope.options = {showLink: true, displayLogo: false};
+    /*$scope.plotlyEvents = function (graph){
+      // Create custom events that subscribe to graph
+      graph.on('plotly_doubleclick', function(event){
+        if (event) {
+            
+                $window.onUpdate();
+                    
+        }
+      });
+    };*/
     /*$scope.movePoint = function() {
         $scope.data[0].y[4]++;
     }*/

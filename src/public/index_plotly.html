@@ -8,8 +8,11 @@
   </head>
   <body ng-controller="controller">
     <!-- plotly graph -->
-    <plotly data="data" layout="layout" options="options"></plotly>
+    <plotly plotly-data="data" plotly-layout="layout" plotly-options="options"  plotly-events="plotlyEvents"></plotly>
 
+    <input type="button" value="Refresh graph and data" onClick="window.location.reload()">
+    <!-- <button ng-click="window.location.reload()">Refresh Graph and data</button>-->
+    
     <h4>{{sensors}}</h4>
     <h4>{{temp}}</h4>
     <h4>{{humi}}</h4>
