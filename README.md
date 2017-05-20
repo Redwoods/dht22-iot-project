@@ -41,7 +41,7 @@ How can you understand the change in temperature cause the change in humidity or
                          
 6. MEAN WEB client: [index_plotly.html](/src/public/index_plotly.html)  (Connect to MongoDB and monitor signal from DHT22)
 
-   http://chaos.inje.ac.kr:3030/index_plotly.html
+   http://localhost:3030/index_plotly.html
    
 7. Data mining and visualization (in preparation)
 
