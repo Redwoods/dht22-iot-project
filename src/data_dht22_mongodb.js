@@ -5,7 +5,7 @@ var portName = 'COM3';  // change to your port.
 var port    =   process.env.PORT || 3000;
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/dht10'); // 'dht10' -> db name
+mongoose.connect('mongodb://localhost:27017/dht01'); // 'dht01' -> db name
     var db = mongoose.connection;
     db.on('error', console.error.bind(console, 'connection error:'));
     db.once('open', function callback () {
@@ -31,7 +31,7 @@ var io = require('socket.io').listen(port, function(req, res){
     console.log('Listening on port : ' + server.address().port);
 });
 
-var sp = new serialport.SerialPort(portName,{
+var sp = new serialport(portName,{
     baudRate: 9600,   // 9600  38400
     dataBits: 8,
     parity: 'none',

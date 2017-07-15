@@ -3,7 +3,7 @@ var express = require('express');
 var app = express();
 // Mongoose
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/dht10');  // 'dht10' -> db name
+mongoose.connect('mongodb://localhost:27017/dht01');  // 'dht01' -> db name
 var Schema = mongoose.Schema;
 var dataSchema = new Schema({
     date : String,

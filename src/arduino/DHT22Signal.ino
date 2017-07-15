@@ -1,3 +1,8 @@
+// DHT22 Project
+// It is necessary to install DHT driver in Arduino environment.
+// Copy DHT driver folder in Arduino libraries folder
+//
+
 #include "DHT.h"
 
 #define DHTPIN 4
@@ -40,5 +45,5 @@ void loop() {
     Serial.print(hic,0);
     Serial.println();
   }
-  delay(5000);  // a data per 6 min = 6 * 60 * 1000 = 360000
+  delay(60000);  // a data per 6 min = 6 * 60 * 1000 = 360000
 }
