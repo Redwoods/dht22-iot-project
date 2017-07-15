@@ -1,0 +1,34 @@
+---
+title: "rmd2github"
+author: "Redwoods"
+date: "2017년 4월 22일"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load data from a json file
+
+```{r loadData}
+library(jsonlite)
+dht <- fromJSON("DHT22_170303_6weeks.json", flatten=TRUE)
+```
+
+## Check data
+
+```{r checkData}
+summary(dht)
+str(dht)
+```
+
+## Plot data
+
+```{r plotData}
+par(mfrow=c(1,1))
+matplot(cbind(dht$temperature,dht$humidity), ylim=c(0,1.1*max(as.numeric(dht$temperature),as.numeric(dht$humidity))), pch = 18:19, col=2:3, xlab = "data index (one data per 6 minutes)", main = "T & H from DHT22")
+legend(1,60,c("Temp", "Humi"), pch = c(18,19), col=c(2,3), lty = c(1,2))
+```
